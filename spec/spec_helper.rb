@@ -1,9 +1,13 @@
 ENV["RACK_ENV"] = 'test'
 
-require 'server'
+require_relative '../server'
 require 'database_cleaner'
+require 'capybara/rspec'
+require 'sinatra'
 
-Rspec.configure do |config|
+Capybara.app = Sinatra::Application.new
+
+RSpec.configure do |config|
 
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction

@@ -1,4 +1,4 @@
-class Cheeps
+class Cheep
 
 	include DataMapper::Resource
 
