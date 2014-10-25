@@ -5,5 +5,11 @@ Current cheeps
 	<% @cheeps.each do |cheep| %>
 	<li><%= cheep.message %><%= cheep.username %></li>
 	<% end %>
-
 </ul>
+
+<div id="new-cheep">
+	<form action="/cheeps" method="post">
+		Cheep: <input type="text" name="message">
+		<input type="submit" value="Add cheep">
+	</form>
+</div>

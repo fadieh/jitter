@@ -16,3 +16,9 @@ get '/' do
 	@cheeps = Cheep.all
 	erb :index
 end
+
+post '/cheeps' do
+	message = params["message"]
+	Cheep.create(:message => message)
+	redirect to('/')
+end
