@@ -8,16 +8,6 @@ require_relative 'helpers/application'
 enable :sessions
 set :session_secret, 'super secret'
 
-env = ENV["RACK_ENV"] || "development" # checking the environment we're in, default to development.
-
-DataMapper.setup(:default, "postgres://localhost/jitter_#{env}") # select database based on environment
-
-# then in spec helper, we specify the environment so the tests we're using are using the right database.
-
-DataMapper.finalize
-
-DataMapper.auto_upgrade!
-
 get '/' do
 	@cheeps = Cheep.all
 	erb :index
@@ -34,8 +24,9 @@ get '/users/new' do
 end
 
 post '/users' do
-	User.create(:email => params[:email],
+	@user = User.create(:email => params[:email],
 				:password => params[:password])
-	session[:user_id] = user.id
+	# need to establish that user so can access and list user id.
+	session[:user_id] = @user.id
 	redirect to('/')
 end
