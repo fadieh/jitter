@@ -39,7 +39,7 @@ feature "User signs in" do
 		User.create(:email => "test@test.com",
 					:password => 'test',
 					:password_confirmation => 'test')
-	end
+		end
 
 	scenario "with correct credentials" do
 		visit '/'
