@@ -1,5 +1,7 @@
 require 'data_mapper'
 require './app/data_mapper_setup'
+require './lib/cheeps'
+require './lib/user'
 
 task :auto_upgrade do
 

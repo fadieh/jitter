@@ -8,6 +8,8 @@ require 'rack-flash'
 
 enable :sessions
 set :session_secret, 'super secret'
+set :public_folder, Proc.new { File.join(root, '..', 'public') }
+
 
 use Rack::Flash
 
