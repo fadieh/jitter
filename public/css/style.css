@@ -9,8 +9,7 @@ body {
 }
 
 #logo {
-	height: 10%;
-	width: 20%;
-	left: auto;
-	right: auto;
+	height: 105px;
+	width: 105px;
+	margin: 26px 42px;
 }
