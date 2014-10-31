@@ -75,3 +75,17 @@ body {
    font-size: 15.3px;
    display: inline-block;
 }
+
+#email {
+	height: 42.6px;
+	width: 274px;
+	background-color: white;
+	font-size: 15.3px;
+	border-width: 1px;
+	border-color: gray;
+	text-align: center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 100;
+   font-size: 15.3px;
+   display: inline-block;
+}
