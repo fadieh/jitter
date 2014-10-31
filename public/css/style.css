@@ -2,3 +2,15 @@
 	padding: 0;
 	margin: 0;
 }
+
+body {
+	background-image: url('/images/background.jpg');
+	background-size: 100%;
+}
+
+#logo {
+	height: 10%;
+	width: 20%;
+	left: auto;
+	right: auto;
+}
