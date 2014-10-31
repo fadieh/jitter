@@ -1,10 +1,17 @@
 * {
 	padding: 0;
 	margin: 0;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+
 }
 
 body {
+	background-image: url('/images/background.jpg');
+	background-size: 100%;
+}
 
+#title {
+	color: white;
 }
 
 #logo {
@@ -24,6 +31,13 @@ body {
 	height: 30px;
 }
 
+#caption {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 400;
+	color: white;
+
+}
+
 #button {
 	height: 40px;
 	width: 105px;
@@ -38,7 +52,7 @@ body {
 	border-right: none;
 	color: white;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 100;
+   font-weight: 300;
    font-size: 15.3px;
    display: inline-block;
 }
@@ -57,7 +71,7 @@ body {
 	border-right: none;
 	color: white;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 100;
+   font-weight: 300;
    font-size: 15.3px;
    display: inline-block;
 }
