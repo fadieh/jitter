@@ -11,4 +11,33 @@ body {
 	height: 105px;
 	width: 105px;
 	margin: 26px 42px;
+	display: inline-block;
+	float:left;
+}
+
+.footer {
+	position: fixed;
+	bottom: 24px;
+	left: 48px;
+	background-color: salmon;
+	max-width: 940px;
+	height: 30px;
+}
+
+#button {
+	height: 40px;
+	width: 105px;
+	background-color: #A9CC4A;
+	border-bottom-style: solid;
+	border-bottom-width: 3.6px;
+	border-bottom-color: #96B249;
+	margin: 26px 42px;
+	display: inline-block;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 100;
+   font-size: 15.3px;
 }
