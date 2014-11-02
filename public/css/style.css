@@ -19,6 +19,8 @@ body {
 	color: white;
 }
 
+/* LOGO */
+
 #logo {
 	height: 105px;
 	width: 105px;
@@ -27,39 +29,11 @@ body {
 	float:left;
 }
 
-.footer {
-	position: fixed;
-	bottom: 24px;
-	left: 48px;
-	background-color: salmon;
-	max-width: 940px;
-	height: 30px;
-}
-
 #caption {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 400;
 	color: white;
 
-}
-
-#button {
-	height: 40px;
-	width: 105px;
-	background-color: #A9CC4A;
-	border-bottom-style: solid;
-	border-bottom-width: 3.6px;
-	border-bottom-color: #96B249;
-	margin: 26px 42px;
-	display: inline-block;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	color: white;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
-   font-size: 15.3px;
-   display: inline-block;
 }
 
 #post {
@@ -81,30 +55,76 @@ body {
    display: inline-block;
 }
 
+/* LOGIN FORM */
+#button {
+	height: 30px;
+	width: 105px;
+	background-color: #A9CC4A;
+	border-bottom-style: solid;
+	border-bottom-width: 3.6px;
+	border-bottom-color: #96B249;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   font-size: 15.3px;
+     border-radius: 4;
+     z-index: 10;
+        display: inline-block;
+        position: absolute;
+        left: 147.5px;
+        top: 99.9px;
+}
+
 #password {
-	height: 42.6px;
-	width: 169px;
+	height: 30px;
+	text-indent: 10;
+	width: 290px;
 	background-color: white;
 	font-size: 15.3px;
 	border-width: 1px;
-	border-color: gray;
-	text-align: center;
+	border-style: none;
+	text-align: left;
+		margin-bottom: 30px;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 100;
    font-size: 15.3px;
-   display: inline-block;
+   border-radius: 4;
+   z-index: 10;
+   position: absolute;
+   left: 55px;
+   top: 66px;
 }
 
 #email {
-	height: 42.6px;
-	width: 274px;
+	height: 30px;
+	text-indent: 10;
+	margin-bottom: 10px;
+	border-radius: 4;
+	z-index: 10;
+	width: 290px;
 	background-color: white;
 	font-size: 15.3px;
-	border-width: 1px;
-	border-color: gray;
-	text-align: center;
+		border-style: none;
+	text-align: left;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 100;
    font-size: 15.3px;
-   display: inline-block;
+         position: absolute;
+   left: 55px;
+   top: 33px;
+}
+
+.login {
+	position: absolute;
+	height: 200px;
+	width: 400px;
+	margin: -100px 0 0 -200px;
+	top: 50%;
+	left: 50%;
+	z-index: 0;
+	border-radius: 20;
+	background-color: rgba(0, 0, 0, 0.4);
 }

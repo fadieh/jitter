@@ -9,26 +9,29 @@
 <h1 id="title">JITTER</h1>
 <h3 id="caption">Honest Coffee Reviews</h3>
 
+<ul id="cheeps">
 Current cheeps
-<ul>
 	<% @cheeps.each do |cheep| %>
 	<li><%= cheep.message %><%= cheep.username %></li>
 	<% end %>
 </ul>
 
 <div id="new-cheep">
+	<% if current_user %>
 	<form action="/cheeps" method="post">
 		Cheep: <input type="text" name="message">
 		<input id="post" type="submit" value="Add cheep">
 	</form>
 </div>
+<% end %>
 
+<section class="column">
+	</section>
 
+<section class="login">
 <form method="post" action="/sessions">
-	<input id="email" type="text" name='email' placeholder="Email">
-	<input id="password" type="password" name="password" placeholder="Password">
+	<input id="email" type="text" name='email' placeholder="Email"><br>
+	<input id="password" type="password" name="password" placeholder="Password"><br>
 	<input id="button" type="submit" value="Sign in">
 </form>
-
-<section class="footer">
-	</section>
+</section>
