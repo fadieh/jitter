@@ -1,8 +1,6 @@
 * {
 	padding: 0;
 	margin: 0;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-
 }
 
 body {
@@ -19,21 +17,28 @@ body {
 	color: white;
 }
 
+#cheeps {
+	visibility: hidden;
+}
+
 /* LOGO */
 
 #logo {
 	height: 105px;
 	width: 105px;
 	margin: 26px 42px;
-	display: inline-block;
-	float:left;
+	position: absolute;
+	left: 42%;
+}
+
+/* TEXT */
+
+#title {
+	visibility: hidden;
 }
 
 #caption {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight: 400;
-	color: white;
-
+	visibility: hidden;
 }
 
 #post {
