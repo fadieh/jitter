@@ -33,7 +33,10 @@ body {
 
 /* TEXT */
 
-#caption {;
+#caption {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 100;
+   	text-align: center;
 }
 
 #post {
@@ -170,4 +173,12 @@ body {
     border-radius: 4;
     z-index: 10;
     display: inline-block;
+}
+
+#signup:hover {
+	background-color: #3B557F;
+}
+
+#button:hover {
+	background-color: #96B249
 }
