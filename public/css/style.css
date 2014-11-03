@@ -33,12 +33,7 @@ body {
 
 /* TEXT */
 
-#title {
-	visibility: hidden;
-}
-
-#caption {
-	visibility: hidden;
+#caption {;
 }
 
 #post {

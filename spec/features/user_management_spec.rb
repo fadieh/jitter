@@ -11,6 +11,12 @@ feature "User signs up" do
 		expect(User.first.email).to eq("fadiehannona@gmail.com")
 	end
 
+	scenario "User clicks sign up button and is taken to the sign up page" do
+		visit '/'
+		click_button 'Sign up'
+		expect(page).to have_content("Please sign up")
+	end
+
 	scenario "with a password that doesn't match" do
 		expect{ sign_up('fadiehannona@gmail.com', 'vodka', 'whiskey')}.to change(User, :count).by(0)
 		expect(current_path).to eq('/users')
