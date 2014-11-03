@@ -18,7 +18,7 @@ body {
 }
 
 #cheeps {
-	visibility: hidden;
+
 }
 
 /* LOGO */
@@ -61,6 +61,7 @@ body {
 }
 
 /* LOGIN FORM */
+
 #button {
 	height: 30px;
 	width: 105px;
@@ -73,14 +74,14 @@ body {
 	border-right: none;
 	color: white;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
-   font-size: 15.3px;
-     border-radius: 4;
-     z-index: 10;
-        display: inline-block;
-        position: absolute;
-        left: 147.5px;
-        top: 99.9px;
+   	font-weight: 300;
+   	font-size: 15.3px;
+    border-radius: 4;
+    z-index: 10;
+    display: inline-block;
+    position: absolute;
+    left: 147.5px;
+    top: 99.9px;
 }
 
 #password {
@@ -132,4 +133,46 @@ body {
 	z-index: 0;
 	border-radius: 20;
 	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#signout {
+	height: 30px;
+	width: 105px;
+	background-color: #A9CC4A;
+	border-bottom-style: solid;
+	border-bottom-width: 3.6px;
+	border-bottom-color: #96B249;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+   	font-size: 15.3px;
+    border-radius: 4;
+    z-index: 10;
+    display: inline-block;
+}
+
+#signup
+{
+	position: fixed;
+	right: 20px;
+	top: 60px;
+	height: 30px;
+	width: 105px;
+	background-color: #75A9FF;
+	border-bottom-style: solid;
+	border-bottom-width: 3.6px;
+	border-bottom-color: #3B557F;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+   	font-size: 15.3px;
+    border-radius: 4;
+    z-index: 10;
+    display: inline-block;
 }
