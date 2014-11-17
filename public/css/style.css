@@ -5,7 +5,7 @@
 
 body {
 	background-size: 100%;
-	color: white;
+	color: black;
 }
 
 /* HEADER */
@@ -118,8 +118,8 @@ body {
 	border-bottom-style: solid;
 	border-bottom-width: 3.6px;
 	border-bottom-color: #A9CC4A;
-	  	font-family: "proxima-nova-soft";
-	  	font-weight: 200;
+	font-family: "proxima-nova-soft";
+	font-weight: 200;
 	left: 40%;
 }
 
@@ -153,44 +153,53 @@ body {
 }
 
 #password {
-	visibility: hidden;
-	height: 30px;
-	text-indent: 10;
-	width: 290px;
+/*	visibility: hidden;
+*/	height: 18.5px;
+	text-indent: 10px;
+	width: 179px;
 	background-color: white;
 	font-size: 15.3px;
 	border-width: 1px;
 	border-style: none;
 	text-align: left;
 	margin-bottom: 30px;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "proxima-nova-soft";
    font-weight: 100;
    font-size: 15.3px;
    border-radius: 4;
    z-index: 10;
    position: absolute;
-   left: 55px;
-   top: 66px;
+   right: 0px;
+   top: 25px;
+   border-radius: 2px;
 }
 
 #email {
-	visibility: hidden;
-	height: 30px;
-	text-indent: 10;
+/*	visibility: hidden;*/
+	height: 18.5px;
+	text-indent: 10px;
 	margin-bottom: 10px;
 	border-radius: 4;
 	z-index: 10;
-	width: 290px;
+	width: 179px;
 	background-color: white;
 	font-size: 15.3px;
 	border-style: none;
 	text-align: left;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "proxima-nova-soft";
    font-weight: 100;
    font-size: 15.3px;
          position: absolute;
-   left: 55px;
-   top: 33px;
+   right: 0px;
+   top: 0px;
+   border-radius: 2px;
+}
+
+#loginform {
+	position: fixed;
+	top: 85px;
+	right: 43px;
+	z-index: 10;
 }
 
 .login {
