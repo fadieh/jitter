@@ -27,8 +27,8 @@ body {
 	left: 0px;
 	width: 100%;
 	background: linear-gradient(
-      rgba(0, 0, 0, 0.15), 
-      rgba(0, 0, 0, 0.15)
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
     ),
 	url('/images/background1.jpg');
 	background-size: 100%;
@@ -36,7 +36,6 @@ body {
 	background-position: 0px -300px;
 	height: 479px;
 	position: fixed;
-
 }
 
 /* LOGO */
@@ -63,11 +62,13 @@ body {
 #title {
 	color: white;
 	text-align: center;
-	top: 80px;
+	top: 209.5px;
 	position: relative;
 	text-shadow: 1px 1px 1px #000, 
                3px 3px 5px black; 
     z-index: 1;
+  	font-family: "proxima-nova-soft";
+  	font-weight: 300;
 }
 
 #post {
