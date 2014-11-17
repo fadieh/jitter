@@ -27,13 +27,13 @@ body {
 	left: 0px;
 	width: 100%;
 	background: linear-gradient(
-      rgba(0, 0, 0, 0.25), 
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.20), 
+      rgba(0, 0, 0, 0.20)
     ),
 	url('/images/background1.jpg');
 	background-size: 100%;
 	background-repeat: none;
-	background-position: 0px -300px;
+	background-position: 0px -250px;
 	height: 479px;
 	position: fixed;
 }
@@ -68,7 +68,7 @@ body {
                3px 3px 5px black; 
     z-index: 1;
   	font-family: "proxima-nova-soft";
-  	font-weight: 300;
+  	font-weight: 400;
 }
 
 #post {
@@ -92,6 +92,44 @@ body {
 
 /* LOGIN FORM */
 
+#logo {
+	height: 30px;
+	width: 30px;
+	top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#logodiv {
+	width: 100%;
+	top: 100px;
+}
+
+#showjeets {
+	height: 30px;
+	width: 275px;
+	display: block;
+	background-color: black;
+	z-index: 10;
+	text-align: center;
+	position: relative;
+	border-bottom-style: solid;
+	border-bottom-width: 3.6px;
+	border-bottom-color: #A9CC4A;
+	  	font-family: "proxima-nova-soft";
+	  	font-weight: 200;
+	left: 40%;
+}
+
+#showjeetsdiv {
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	top: 350px;
+}
+
 #button {
 	height: 30px;
 	width: 105px;
@@ -103,8 +141,8 @@ body {
 	border-left: none;
 	border-right: none;
 	color: white;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   	font-weight: 300;
+	font-family: "proxima-nova-soft";   	
+	font-weight: 300;
    	font-size: 15.3px;
     border-radius: 4;
     z-index: 10;
@@ -124,7 +162,7 @@ body {
 	border-width: 1px;
 	border-style: none;
 	text-align: left;
-		margin-bottom: 30px;
+	margin-bottom: 30px;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 100;
    font-size: 15.3px;
@@ -145,7 +183,7 @@ body {
 	width: 290px;
 	background-color: white;
 	font-size: 15.3px;
-		border-style: none;
+	border-style: none;
 	text-align: left;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 100;
@@ -201,8 +239,8 @@ body {
 	border-left: none;
 	border-right: none;
 	color: white;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   	font-weight: 300;
+	font-family: "proxima-nova-soft";
+	font-weight: 300;
    	font-size: 15.3px;
     border-radius: 4;
     z-index: 10;
