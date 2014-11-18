@@ -11,11 +11,12 @@ body {
 /* HEADER */
 
 #header {
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
+	right: 0;
 	height: 70px;
 	width: 100%;
-	z-index: 0;
+	z-index: 1;
 	position: fixed;
 	background-color: black;
 }
@@ -23,38 +24,40 @@ body {
 /* BODY */
 
 #body {
-	top: 70px;
+	top: -30px;
 	left: 0px;
 	width: 100%;
 	background: linear-gradient(
-      rgba(0, 0, 0, 0.20), 
-      rgba(0, 0, 0, 0.20)
+      rgba(0, 0, 0, 0.40), 
+      rgba(0, 0, 0, 0.40)
     ),
 	url('/images/background1.jpg');
 	background-size: 100%;
 	background-repeat: none;
 	background-position: 0px -250px;
 	height: 479px;
-	position: fixed;
+	position: relative;
+	z-index:0;
 }
 
 /* LOGO */
-
-#logo {
-	height: 30px;
-	width: 30px;
-	top: 20px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-}
 
 #logodiv {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	top: 100px;
+	top: 20px;
+	position: fixed;
+}
+
+
+#logo {
+	height: 30px;
+	width: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 30;
 }
 
 /* TEXT */
@@ -69,6 +72,21 @@ body {
     z-index: 1;
   	font-family: "proxima-nova-soft";
   	font-weight: 400;
+}
+
+#synopsis {
+	top: 220px;
+	position: relative;
+	z-index: 30;
+	color: white;
+	 font-family: "proxima-nova-soft";
+	 font-weight: 200;
+	 text-align: left;
+	 margin-left: auto;
+	 margin-right: auto;
+	 	text-shadow: 1px 1px 1px #000, 
+               3px 3px 5px black; 
+               width: 50%;
 }
 
 #post {
@@ -91,37 +109,6 @@ body {
 }
 
 /* LOGIN FORM */
-
-#logo {
-	height: 30px;
-	width: 30px;
-	top: 20px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-}
-
-#logodiv {
-	width: 100%;
-	top: 100px;
-}
-
-#showjeets {
-	height: 30px;
-	width: 275px;
-	display: block;
-	background-color: black;
-	z-index: 10;
-	text-align: center;
-	position: relative;
-	border-bottom-style: solid;
-	border-bottom-width: 3.6px;
-	border-bottom-color: #A9CC4A;
-	font-family: "proxima-nova-soft";
-	font-weight: 200;
-	left: 40%;
-}
 
 #showjeetsdiv {
 	width: 100%;
@@ -147,7 +134,7 @@ body {
     border-radius: 4;
     z-index: 10;
     display: inline-block;
-    position: absolute;
+    position: fixed;
     right: 145px;
     top: 20px;
 }
@@ -198,7 +185,7 @@ body {
 #loginform {
 	position: fixed;
 	top: 85px;
-	right: 43px;
+	right: 40px;
 	z-index: 10;
 }
 
@@ -229,7 +216,9 @@ body {
    	font-weight: 300;
    	font-size: 15.3px;
     border-radius: 4;
-    z-index: 10;
+    z-index: 20;
+    top: 20px;
+    right: 20px;
     display: inline-block;
 }
 
