@@ -118,6 +118,19 @@ body {
 	top: 350px;
 }
 
+#loginbackground {
+	background-color: black;
+	opacity: 0.5;
+	width: 230px;
+	height: 95px;
+	position: fixed;
+	top: 70px;
+	right: 20px;
+	z-index: 1;
+	border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+}
+
 #button {
 	height: 30px;
 	width: 105px;
@@ -140,6 +153,28 @@ body {
     top: 20px;
 }
 
+#button2 {
+	height: 18.5px;
+	width: 179px;
+	background-color: #A9CC4A;
+	border-bottom-style: solid;
+	border-bottom-width: 3.6px;
+	border-bottom-color: #96B249;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: white;
+	font-family: "proxima-nova-soft";   	
+	font-weight: 300;
+   	font-size: 9.4px;
+    border-radius: 4;
+    z-index: 10;
+    display: inline-block;
+    position: fixed;
+    right: 40px;
+    top: 135px;
+}
+
 #password {
 /*	visibility: hidden;
 */	height: 18.5px;
@@ -155,7 +190,7 @@ body {
    font-weight: 100;
    font-size: 15.3px;
    border-radius: 4;
-   z-index: 10;
+   z-index: 30;
    position: absolute;
    right: 0px;
    top: 25px;
@@ -178,6 +213,7 @@ body {
    font-weight: 100;
    font-size: 15.3px;
          position: absolute;
+         z-index: 40;
    right: 0px;
    top: 0px;
    border-radius: 2px;
