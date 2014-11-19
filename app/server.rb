@@ -18,6 +18,11 @@ get '/' do
 	erb :index
 end
 
+get '/main' do
+	@cheeps = Cheep.all
+  erb :main
+end
+
 post '/cheeps' do
 	message = params["message"]
 	Cheep.create(:message => message)
