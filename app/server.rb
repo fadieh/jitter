@@ -57,7 +57,7 @@ post '/sessions' do
 	user = User.authenticate(email, password)
 	if user
 		session[:user_id] = user.id
-		redirect to('/')
+		redirect to('/main')
 	else
 		flash[:errors] = ["The email or password is incorrect"]
 		erb :"sessions/new"
