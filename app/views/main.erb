@@ -1,8 +1,9 @@
 <ul id="cheeps">
 Current cheeps
 	<% @cheeps.each do |cheep| %>
-	<li><%= cheep.message %><%= cheep.username %></li>
+	<li><%= cheep.message %><br>
+		<%= cheep.username %><br>
+		<%= cheep.favourites %>
+	</li>
 	<% end %>
 </ul>
-
-<h1> hey </h1>
