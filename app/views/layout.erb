@@ -25,18 +25,20 @@
 	<section id="loginbackground">
 	</section>
 
+
+<% if !current_user %>
 	<section id="loginform">
 	<form method="post" action="/sessions">
 	<input id="email" type="text" name='email' placeholder="Email"><br>
 	<input id="password" type="password" name="password" placeholder="Password"><br>
-	</section>
-	<input id="button" type="submit" value="Sign in">
 	<input id="button2" type="submit" value="Log in">
 	</form>
+	</section>
 
-<form action="/users/new">
-<input id="signup" type="submit" value="Sign up">
-</form>
+	<form action="/users/new">
+	<input id="signup" type="submit" value="Sign up">
+	</form>
+<% end %>
 
 	<% if current_user %>
 	Welcome, <%= current_user.email %>

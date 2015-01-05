@@ -1,4 +1,4 @@
-* {
+/* * {
 	padding: 0;
 	margin: 0;
 }
@@ -8,7 +8,7 @@ body {
 	color: black;
 }
 
-/* HEADER */
+
 
 #header {
 	top: 0;
@@ -21,7 +21,7 @@ body {
 	background-color: black;
 }
 
-/* BODY */
+
 
 #body {
 	top: -30px;
@@ -40,7 +40,7 @@ body {
 	z-index:0;
 }
 
-/* LOGO */
+
 
 #enter {
 	height: 24.7px;
@@ -86,7 +86,7 @@ background-color: #96B249
 	z-index: 99;
 }
 
-/* TEXT */
+
 
 #title {
 	color: white;
@@ -134,7 +134,7 @@ background-color: #96B249
    display: inline-block;
 }
 
-/* LOGIN FORM */
+
 
 #showjeetsdiv {
 	width: 100%;
@@ -201,8 +201,8 @@ background-color: #96B249
 }
 
 #password {
-/*	visibility: hidden;
-*/	height: 18.5px;
+	visibility: hidden;
+	height: 18.5px;
 	text-indent: 10px;
 	width: 179px;
 	background-color: white;
@@ -223,7 +223,7 @@ background-color: #96B249
 }
 
 #email {
-/*	visibility: hidden;*/
+	visibility: hidden;
 	height: 18.5px;
 	text-indent: 10px;
 	margin-bottom: 10px;
