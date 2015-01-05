@@ -1,13 +1,3 @@
-Project Jitter
+#Jitter
 
-=================
-
-The Concept.
-
-A clone of Twitter.
-Coffee gives you the Jitters.
-We need more honest coffee reviews.
-Hence the name Jitter.
-Twitter for Coffee.
-
-==================
+<center>![Alt text](https://raw.githubusercontent.com/fadieh/jitter/master/public/images/logo-01.png)</center>
