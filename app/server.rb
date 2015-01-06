@@ -69,3 +69,9 @@ delete '/sessions' do
 	session[:user_id] = nil
 	redirect to('/')
 end
+
+get '/favourite/:id' do
+	cheep = Cheep.first(:id => params[:id])
+	cheep.like
+	redirect '/main'
+end

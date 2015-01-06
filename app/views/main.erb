@@ -1,9 +1,22 @@
+<!-- Use jQuery to create a modal for this later -->
+<% if current_user %>
+	<a href="#">New Message</a>
+<% end %>
+
 <ul id="cheeps">
 Current cheeps
 	<% @cheeps.each do |cheep| %>
 	<li><%= cheep.message %><br>
 		<%= cheep.username %><br>
 		<%= cheep.favourites %>
+		<!-- Make this work properly -->
+		<% if cheep.username != current_user %> 
+		<a href="/favourite/<%= cheep.id %>">Favourite</a>
+		<% end %>
+		<!-- Make this work properly -->
+		<% if cheep.username == current_user %>
+		<a href="#">Delete Cheep</a>
+		<% end %>
 	</li>
 	<% end %>
 </ul>
