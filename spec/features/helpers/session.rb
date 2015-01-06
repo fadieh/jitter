@@ -18,4 +18,10 @@ module SessionHelpers
 		click_button "Sign up"
 	end
 
+	def post_cheep(message)
+		visit '/main'
+		fill_in :message, :with => message
+		click_button "Add cheep"
+	end
+
 end

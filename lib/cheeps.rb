@@ -4,7 +4,7 @@ class Cheep
 
 	property :id, Serial
 	property :message, Text
-	property :username, String
+	property :email, String
 
 	property :favourites, Integer, :default => 0 
 
