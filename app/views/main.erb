@@ -1,13 +1,18 @@
 <!-- Use jQuery to create a modal for this later -->
-<% if current_user %>
-	<a href="#">New Message</a>
+<div id="new-cheep">
+	<% if current_user %>
+	<form action="/cheeps" method="post">
+		Cheep: <input type="text" name="message">
+		<input id="post" type="submit" value="Add cheep">
+	</form>
+</div>
 <% end %>
 
 <ul id="cheeps">
 Current cheeps
 	<% @cheeps.each do |cheep| %>
 	<li><%= cheep.message %><br>
-		<%= cheep.username %><br>
+		@<%= cheep.username %><br>
 		<%= cheep.favourites %>
 		<!-- Make this work properly -->
 		<% if cheep.username != current_user %> 

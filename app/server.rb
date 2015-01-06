@@ -20,13 +20,14 @@ end
 
 get '/main' do
 	@cheeps = Cheep.all
-  erb :main
+  	erb :main
 end
 
 post '/cheeps' do
 	message = params["message"]
-	Cheep.create(:message => message)
-	redirect to('/')
+	@user = current_user
+	Cheep.create(:message => message, :username => @user)
+	redirect to('/main')
 end
 
 get '/users/new' do
