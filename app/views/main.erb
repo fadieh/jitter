@@ -14,14 +14,11 @@ Current cheeps
 	<li><%= cheep.message %><br>
 		@<%= cheep.username %><br>
 		<%= cheep.favourites %>
-		<!-- Make this work properly -->
-		<% if cheep.username != current_user %> 
-		<a href="/favourite/<%= cheep.id %>">Favourite</a>
-		<% end %>
-		<!-- Make this work properly -->
-		<% if cheep.username == current_user %>
-		<a href="#">Delete Cheep</a>
-		<% end %>
+
+		<a href="/favourite/<%= cheep.id %>">Favourite</a><br>
+
+		<a href="/delete/<%= cheep.id %>">Delete</a>
+
 	</li>
 	<% end %>
 </ul>

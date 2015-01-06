@@ -18,5 +18,9 @@ class Cheep
 		self.save
 	end
 
+	def delete
+		self.destroy
+	end
+
 end
 
