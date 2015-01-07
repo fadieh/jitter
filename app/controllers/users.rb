@@ -12,7 +12,7 @@ post '/users' do
 				:second_name => params[:second_name])
 	if @user.save
 	session[:user_id] = @user.id
-	redirect to('/')
+	redirect to('/main')
 	else
 	flash.now[:errors] = @user.errors.full_messages
 	erb :"/users/new"

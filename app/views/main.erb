@@ -13,7 +13,7 @@ Current cheeps
 	<% @cheeps.each do |cheep| %>
 	<li><%= cheep.message %><br>
 		@<%= cheep.username %><br>
-		<%= cheep.favourites %>
+		<%= cheep.favourites %><br>
 		<%= cheep.created_at %><br>
 		<a href="/favourite/<%= cheep.id %>">Favourite</a><br>
 
