@@ -15,17 +15,6 @@
 
 <body>
 
-	<section id="header">
-	</section>
-
-	<section id="logodiv">
-	<img id="logo"src="/images/logo2-01.png" alt="logo">
-	</section>
-
-	<section id="loginbackground">
-	</section>
-
-
 <% if !current_user %>
 	<section id="loginform">
 	<form method="post" action="/sessions">
@@ -41,6 +30,7 @@
 <% end %>
 
 	<% if current_user %>
+	<%= current_user.first_name %><br>
 	<%= current_user.username %>
 	<form method="post" action="/sessions">
 		<input type="hidden" name="_method" value="delete">

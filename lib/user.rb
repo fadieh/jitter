@@ -8,6 +8,8 @@ class User
 	property :email, String, :unique => true, :message => "This email is already taken"
 	property :username, String, :unique => true, :message => "This username is already taken"
 	property :password_digest, Text
+	property :first_name, String
+	property :second_name, String
 
 	attr_reader :password
 	attr_accessor :password_confirmation
