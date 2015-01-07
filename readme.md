@@ -5,3 +5,8 @@
 Twitter for Coffee :coffee:
 
 https://secure-temple-2854.herokuapp.com
+
+Aims
+
+- 
+- To explore on click animations and events with jQuery further.
