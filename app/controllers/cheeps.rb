@@ -1,7 +1,7 @@
 post '/cheeps' do
 	message = params["message"]
 	@user = current_user
-	Cheep.create(:message => message, :username => @user.username)
+	Cheep.create(:message => message, :username => @user.username, :created_at => Time.now)
 	redirect to('/main')
 end
 

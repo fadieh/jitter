@@ -5,6 +5,7 @@ class Cheep
 	property :id, Serial
 	property :message, Text
 	property :username, String
+	property :created_at, DateTime
 
 	property :favourites, Integer, :default => 0 
 
