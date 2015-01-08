@@ -10,3 +10,4 @@ Aims
 
 - Gain a better insight into relationship modelling.
 - To explore on click animations and events with jQuery further.
+- To cultivate a design that is unified, alluring and informative.
