@@ -7,7 +7,7 @@ class Cheep
 	property :username, String
 	property :created_at, DateTime
 
-	property :favourites, Integer, :default => 0 
+	property :favourites, Integer, :default => 0
 
 	attr_reader :password
 	attr_accessor :password_confirmation

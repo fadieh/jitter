@@ -2,25 +2,23 @@
 <div id="new-cheep">
 	<% if current_user %>
 	<form action="/cheeps" method="post">
-		Cheep: <input type="text" name="message">
-		<input id="post" type="submit" value="Add cheep">
+		<input type="text" name="message" placeholder="Say hello...">
+		<input id="post" type="submit" value="Post">
 	</form>
 </div>
 <% end %>
 
 <ul id="cheeps">
-Current cheeps
 	<% @cheeps.each do |cheep| %>
 	<li><%= cheep.message %><br>
 		@<%= cheep.username %><br>
 		<%= cheep.favourites %><br>
 		<%= cheep.created_at %><br>
+
 		<a href="/favourite/<%= cheep.id %>">Favourite</a><br>
 
 		<% if cheep.username == current_user.username %>
 		<a href="/delete/<%= cheep.id %>">Delete</a>
-		<% else %>
-		<br>
 		<% end %>
 
 	</li>
