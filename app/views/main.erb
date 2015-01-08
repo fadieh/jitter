@@ -11,7 +11,7 @@
 <ul id="cheeps">
 	<% @cheeps.each do |cheep| %>
 	<li><%= cheep.message %><br>
-		@<%= cheep.username %><br>
+		<a href="/profile/<%= cheep.username %>">@<%= cheep.username %></a><br>
 		<%= cheep.favourites %><br>
 		<%= cheep.created_at %><br>
 
