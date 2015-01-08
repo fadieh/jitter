@@ -1,0 +1,27 @@
+body {
+	background: url(/images/background-03.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+#title {
+font-family: "nimbus-sans",sans-serif;
+text-transform: uppercase;
+font-weight: 900;
+font-size: 48px;
+text-align: center;
+letter-spacing: 2px;
+color: white;
+}
+
+#synopsis {
+	font-family: "nimbus-sans", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 48px;
+	text-align: center;
+	letter-spacing: 2.2px;
+	color: white;
+}
+
