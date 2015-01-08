@@ -1,2 +1,21 @@
 <%= @user.username %><br>
 <%= @user.email %>
+
+<ul id="cheeps">
+	<% @cheeps.each do |cheep| %>
+	<% if cheep.username == @user.username %>
+	<li><%= cheep.message %><br>
+		@<%= cheep.username %></a><br>
+		<%= cheep.favourites %><br>
+		<%= cheep.created_at %><br>
+
+		<a href="/favourite/<%= cheep.id %>">Favourite</a><br>
+
+		<% if cheep.username == current_user.username %>
+		<a href="/delete/<%= cheep.id %>">Delete</a>
+		<% end %>
+		<% end %>
+
+	</li>
+	<% end %>
+</ul>
