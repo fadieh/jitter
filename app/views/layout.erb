@@ -6,10 +6,6 @@
 
 	<link rel="shortcut icon" href="/images/logo-01.ico">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="/css/reset.css"> -->
-	<!-- Bootstrap -->
-<!-- 	<link rel="stylesheet" href="/css/bootstrap.css">
-	<link rel="stylesheet" href="/css/bootstrap-responsive.css"> -->
 
 </head>
 
@@ -20,9 +16,9 @@
 <% if !current_user %>
 	<section id="loginform">
 	<form method="post" action="/sessions">
-	<input id="email" type="text" name='email' placeholder="Email">
-	<input id="password" type="password" name="password" placeholder="Password">
-	<input id="button2" type="submit" value="Log in">
+	<input class="input" id="email" type="text" name='email' placeholder="Email">
+	<input class="input" id="password" type="password" name="password" placeholder="Password">
+	<input class="login-btn" id="button2" type="submit" value="Login">
 	</form>
 	</section>
 
@@ -57,7 +53,5 @@
 
 	<%= yield %>
 
-	<!-- Bootstrap jQuery Plugin, compiled and minified -->
-	<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
