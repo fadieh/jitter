@@ -1,5 +1,5 @@
 body {
-	background: url(/images/background-03.png);
+	background: url(/images/background-01.jpg);
 	background-size: 1400px 800px;
 	background-repeat: no-repeat;
 	z-index: 1;
@@ -16,6 +16,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
+	left: 15%;
+	/*top: 2.8em;*/
+	position: absolute;
 }
 
 .synopsis {
@@ -27,4 +30,16 @@ body {
 	letter-spacing: 2.5px;
 	color: white;
 	-webkit-font-smoothing: antialiased;
+	left: 15%;
+	top: 2.75em;
+	position: absolute;
+}
+
+.text-background {
+	background-color: rgba(0,0,0,0.75);
+	width: 100%;
+	top: 15em;
+	left: 0;
+	position: absolute;
+	height: 85px;
 }

@@ -11,13 +11,13 @@
 
 <body>
 
-	<img src="/images/logo-black-01.png"><br>
-
+<header>
+<section class="header">
 <% if !current_user %>
 	<section id="loginform">
 	<form method="post" action="/sessions">
-	<input class="input" id="email" type="text" name='email' placeholder="Email">
-	<input class="input" id="password" type="password" name="password" placeholder="Password">
+	<!-- <input class="input" id="email" type="text" name='email' placeholder="Email"> -->
+	<!-- <input class="input" id="password" type="password" name="password" placeholder="Password"> -->
 	<input class="login-btn home-btns" id="button2" type="submit" value="Login">
 	</form>
 
@@ -26,6 +26,11 @@
 	</form>
 	</section>
 <% end %>
+
+	<img class="logo" src="/images/logowhite-01.png"><br>
+
+</section>
+</header>
 
 	<% if current_user %>
 	<%= current_user.first_name %><br>
