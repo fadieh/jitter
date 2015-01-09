@@ -1,6 +1,6 @@
 #Jitter
 
-<center>![Alt text](https://raw.githubusercontent.com/fadieh/jitter/master/public/images/logo-01.png)</center>
+<center>![Alt text](https://raw.githubusercontent.com/fadieh/jitter/master/public/images/snapshot.png)</center>
 
 Twitter for Coffee :coffee:
 
