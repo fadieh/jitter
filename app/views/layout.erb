@@ -1,62 +1,57 @@
 <html>
 <head>
 
+<title>Jitter</title>
 <script src="//use.typekit.net/exh1wcj.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 
-	<link rel="shortcut icon" href="/images/logo-01.ico">
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head>
 
 <body>
 
 <header>
-<section class="header">
-<% if !current_user %>
-	<section id="loginform">
-	<form method="post" action="/sessions">
-	<!-- <input class="input" id="email" type="text" name='email' placeholder="Email"> -->
-	<!-- <input class="input" id="password" type="password" name="password" placeholder="Password"> -->
-	<input class="login-btn home-btns" id="button2" type="submit" value="Login">
-	</form>
-
-	<form action="/users/new">
-	<input class="signup-btn home-btns" id="signup" type="submit" value="Sign up">
-	</form>
+	<section class="header">
+		<% if !current_user %>
+			<section id="loginform">
+				<form action="'/sessions/new'">
+					<input class="login-btn home-btns" type="submit" value="Login">
+				</form>
+				<form action="/users/new">
+					<input class="signup-btn home-btns" id="signup" type="submit" value="Sign up">
+				</form>
+			</section>
+		<% end %>
+			<img class="logo" src="/images/logowhite-01.png"><br>
 	</section>
-<% end %>
-
-	<img class="logo" src="/images/logowhite-01.png"><br>
-
-</section>
 </header>
 
-	<% if current_user %>
+<% if current_user %>
 	<%= current_user.first_name %><br>
-	<%= current_user.username %>
-	<form method="post" action="/sessions">
-		<input type="hidden" name="_method" value="delete">
-		<input id="signout" type="submit" value="Sign out">
-	</form>
-	<% end %>
+		<%= current_user.username %>
+			<form method="post" action="/sessions">
+				<input type="hidden" name="_method" value="delete">
+				<input id="signout" type="submit" value="Sign out">
+			</form>
+<% end %>
 
-	<% if flash[:errors] && !flash[:errors].empty? %>
+<% if flash[:errors] && !flash[:errors].empty? %>
 	Sorry, there were the following problems with the form
-	<ul id="errors">
-		<% flash[:errors].each do |error| %>
-		<li><%= error %></li>
-		<% end %>
-	</ul>
-	<% end %>
+		<ul id="errors">
+			<% flash[:errors].each do |error| %>
+				<li><%= error %></li>
+			<% end %>
+		</ul>
+<% end %>
 
-	<% if flash[:notice] %>
-		<div id="notice">
-			<%= flash[:notice] %>
-		</div>
-	<% end %>
+<% if flash[:notice] %>
+	<div id="notice">
+		<%= flash[:notice] %>
+	</div>
+<% end %>
 
-	<%= yield %>
+<%= yield %>
 
 </body>
 </html>
