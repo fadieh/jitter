@@ -34,3 +34,17 @@ This is was our Week 4 Weekend and Week 6 Project at Makers Academy where we int
 ## Heroku address
 
 https://secure-temple-2854.herokuapp.com
+
+## Technologies used
+
+- Ruby 2.1.2
+- Sinatra 1.4.5
+- DataMapper 1.2.0
+- BCrypt-Ruby 3.1.5
+- RackFlash 1.0.5
+- RSpec 3.1.0
+- Capybara 2.4.4
+- CarrierWave
+- ERB, CSS3 
+- Adobe Illustrator CC
+- JQuery
