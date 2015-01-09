@@ -18,13 +18,13 @@
 	<form method="post" action="/sessions">
 	<input class="input" id="email" type="text" name='email' placeholder="Email">
 	<input class="input" id="password" type="password" name="password" placeholder="Password">
-	<input class="login-btn" id="button2" type="submit" value="Login">
+	<input class="login-btn home-btns" id="button2" type="submit" value="Login">
 	</form>
-	</section>
 
 	<form action="/users/new">
-	<input id="signup" type="submit" value="Sign up">
+	<input class="signup-btn home-btns" id="signup" type="submit" value="Sign up">
 	</form>
+	</section>
 <% end %>
 
 	<% if current_user %>

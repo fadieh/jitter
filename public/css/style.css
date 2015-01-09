@@ -5,30 +5,46 @@
 	height: 32px;
 	text-indent: 5px;
 	font-family: "proxima-nova-soft",sans-serif;
+	-webkit-font-smoothing: antialiased;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 700;
 }
 
-.login-btn {
+.home-btns {
 	height: 32px;
 	width: 84px;
 	font-size: 14px;
-	background-color: rgba(80,191,96,0.92);
 	border-style: none;
 	font-family: "proxima-nova-soft",sans-serif;
+	-webkit-font-smoothing: antialiased;
 	font-style: normal;
 	font-weight: 500;
 	color: white;
 	letter-spacing: 1.75px;
 	border-radius: 3px;
 	float: right;
-	right: 32px;
 	position: absolute;
 }
 
-.login-btn:hover {
-	background-color: rgba(80,191,96,1);
+.login-btn {
+	background-color: rgba(80,191,96,0.92);
+	right: 32px;
 }
+
+.login-btn:hover {
+	background-color: rgba(80,191,96,1.0);
+}
+
+.signup-btn {
+	background-color: rgba(65,170,204,0.92);
+	right: 148px;
+}
+
+.signup-btn:hover{
+	background-color: rgba(65,170,204,1);
+}
+
+
 
 
 /* * {
