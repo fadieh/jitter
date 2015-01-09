@@ -2,11 +2,11 @@
 
 <center>![Alt text](https://raw.githubusercontent.com/fadieh/jitter/master/public/images/snapshot.png)</center>
 
-##### <center>"Esentially, it's Twitter but for Coffee..."</center><br>
+#####"Esentially, it's Twitter but for Coffee..."<br><br>
 
-This is was our Week 4 Weekend and Week 6 Project at Makers Academy where we introduced the use of Relational Databases by creating a Twitter clone. 
+This is was our Week 4 Weekend and Week 6 Project at Makers Academy where we introduced the use of Relational Databases by creating a Twitter clone. <br>
 
-##### Aims of Jitter
+## Aims of Jitter
 ___
 - Create a simple Twitter clone using Ruby and Sinatra.
 - User can sign up with an email and password.
@@ -15,7 +15,7 @@ ___
 - User can sign out.
 - User can get an email if they've forgotten their password.
 
-#####Additional Features I've added on
+## Additional Features I've added on
 ___
 
 - Profile Pages.
@@ -24,7 +24,7 @@ ___
 - Messages show information such as the user's display name, username, amount of favourites and a time stamp.
 - Photo upload.
 
-##### Personal Aims
+## Personal Aims
 ___
 
 - Gain a better insight into relationship modelling.
@@ -33,6 +33,6 @@ ___
 - To cultivate a design that is unified, alluring and informative.
 - To use the Carrier Wave gem for uploading photos.
 
-##### Heroku address
+## Heroku address
 ___
 https://secure-temple-2854.herokuapp.com
