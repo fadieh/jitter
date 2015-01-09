@@ -7,7 +7,7 @@
 This is was our Week 4 Weekend and Week 6 Project at Makers Academy where we introduced the use of Relational Databases by creating a Twitter clone. <br>
 
 ## Aims of Jitter
-___
+
 - Create a simple Twitter clone using Ruby and Sinatra.
 - User can sign up with an email and password.
 - User can sign in with an email and password.
@@ -16,7 +16,6 @@ ___
 - User can get an email if they've forgotten their password.
 
 ## Additional Features I've added on
-___
 
 - Profile Pages.
 - Ability to favourite messages.
@@ -25,7 +24,6 @@ ___
 - Photo upload.
 
 ## Personal Aims
-___
 
 - Gain a better insight into relationship modelling.
 - To understand the full-stack process further.
@@ -34,5 +32,5 @@ ___
 - To use the Carrier Wave gem for uploading photos.
 
 ## Heroku address
-___
+
 https://secure-temple-2854.herokuapp.com
